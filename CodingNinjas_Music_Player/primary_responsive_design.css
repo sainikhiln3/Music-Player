@@ -1,0 +1,165 @@
+@media screen and (max-width: 1200px) {
+  .favs {
+    display: none !important;
+  }
+  /* reduced size of search bar */
+  .search-bar {
+    width: 30%;
+  }
+  input {
+    font-size: 11px !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* more button will visible */
+  label[for="more"] {
+    display: block;
+  }
+  .section1 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 66vh;
+    background-color: black;
+    box-shadow: 0px 0px 2px 1px white;
+    right: 0px;
+    top: 23.5%;
+    z-index: 5;
+    overflow: scroll;
+    padding-left: 10px;
+    padding-right: 8px;
+    transition: visibility ease-in-out 0.2s;
+    transition: opacity ease-in-out 0.2s;
+  }
+  .playlist-content {
+    overflow: visible;
+  }
+  .queue-option {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 9%;
+    right: 0%;
+  }
+  input[id="more"]:checked ~ .section1 {
+    visibility: visible;
+    opacity: 1;
+  }
+  .section1::-webkit-scrollbar {
+    display: none;
+  }
+  .section {
+    width: 100%;
+  }
+  .img {
+    min-width: 250px;
+  }
+  .outer-carousel {
+    height: 9%;
+  }
+  .carousel img {
+    height: 23vw;
+    width: 34.5vw;
+  }
+  /* hover size increased because hover size increased */
+  .carousel img:hover {
+    height: 27vw;
+    width: 40.5vw;
+  }
+  .music-theme div p {
+    margin-top: -5px;
+  }
+  .music-theme {
+    justify-content: space-around;
+  }
+
+  .main-theme {
+    width: 50%;
+  }
+  .theme p {
+    top: -8.25vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .extras > div:nth-child(3) {
+    display: none;
+  }
+  .extras > div:nth-child(4) {
+    display: none;
+  }
+  .outer-div {
+    width: 36vw;
+    height: 24vw;
+    min-width: 123px;
+    min-height: 82px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* inmg in footer */
+  .song-image img {
+    display: none;
+  }
+  /* logo of website */
+  .website-logo img {
+    height: 30px;
+    width: 30px;
+  }
+  /* title  */
+  .website-name h2 {
+    font-size: 1.1rem;
+  }
+  .website-name h6 {
+    font-size: 0.7rem;
+  }
+  /* bell icon */
+  .bell-icon {
+    width: 10px;
+    height: 10px;
+  }
+  /* profile image */
+  .profile-picture img {
+    width: 30px;
+    height: 30px;
+  }
+  /*  */
+  .main-theme {
+    width: 100%;
+  }
+  .theme {
+    width: 18vw;
+    height: 18vw;
+  }
+  .theme p {
+    font-size: 4.5vw;
+    top: -18.8vw;
+  }
+  .music-theme div img {
+    width: 18vw;
+    height: 18vw;
+  }
+  /* stations text */
+  #div1 {
+    width: 30vw;
+    height: 20vw;
+  }
+  #div2 {
+    width: 28vw;
+    height: 24vw;
+  }
+  #div3 {
+    width: 26vw;
+    height: 26vw;
+  }
+  #div3 p {
+    font-size: 5vw;
+  }
+  .outer-div .inner-div span {
+    font-size: 6vw;
+  }
+  #div3 img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
